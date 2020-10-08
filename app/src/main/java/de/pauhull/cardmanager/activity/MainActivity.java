@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
 
         super.onResume();
-        this.updateList();
+        this.updateList(true);
     }
 
-    private void updateList() {
+    private void updateList(boolean animateEntries) {
 
         List<CardManager.Card> cards = CardManager.getInstance().getCards();
 
@@ -98,11 +98,13 @@ public class MainActivity extends AppCompatActivity {
 
             createButton(card);
 
-            Button button = card.getButton();
-            button.setAlpha(0);
-            button.setTranslationX(dpToPx(10, this));
-            button.animate().translationX(0).alpha(1).setDuration(250).setStartDelay(animDelay);
-            animDelay += 50;
+            if (animateEntries) {
+                Button button = card.getButton();
+                button.setAlpha(0);
+                button.setTranslationX(dpToPx(10, this));
+                button.animate().translationX(0).alpha(1).setDuration(250).setStartDelay(animDelay);
+                animDelay += 50;
+            }
         }
     }
 
@@ -228,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 cardListLayout.removeView(card.getButton());
-                updateList();
+                updateList(false);
             }
         });
 
