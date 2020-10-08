@@ -29,6 +29,7 @@ public class CardManager {
 
     public void readCards(File dir) {
 
+        cards.clear();
         File file = new File(dir, "cards.json");
 
         if (!file.exists()) {

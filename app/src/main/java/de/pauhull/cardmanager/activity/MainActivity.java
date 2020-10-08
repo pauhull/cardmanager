@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity {
         this.noCardText = findViewById(R.id.noCardText);
         this.cardListLayout = findViewById(R.id.cardListLayout);
 
-        CardManager.getInstance().readCards(this.getFilesDir());
+        if (CardManager.getInstance().getCards().isEmpty()) {
+            CardManager.getInstance().readCards(this.getFilesDir());
+        }
 
         scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
