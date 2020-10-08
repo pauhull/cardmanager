@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="350dp"
+    android:background="@drawable/background_dialog">
+
+    <TextView
+        android:id="@+id/hueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/hue"
+        android:textColor="@color/colorTextLight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/saturationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/saturation"
+        android:textColor="@color/colorTextLight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hueSlider" />
+
+    <TextView
+        android:id="@+id/valueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/value"
+        android:textColor="@color/colorTextLight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturationSlider" />
+
+    <ImageView
+        android:id="@+id/hueView"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F30000"
+        android:contentDescription="@android:string/untitled"
+        app:layout_constraintBottom_toBottomOf="@+id/hueSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hueSlider"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <ImageView
+        android:id="@+id/saturationView"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F30000"
+        android:contentDescription="@android:string/untitled"
+        app:layout_constraintBottom_toBottomOf="@+id/saturationSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/saturationSlider"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <ImageView
+        android:id="@+id/valueView"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F30000"
+        android:contentDescription="@android:string/untitled"
+        app:layout_constraintBottom_toBottomOf="@+id/valueSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valueSlider"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <SeekBar
+        android:id="@+id/hueSlider"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foregroundTint="@android:color/transparent"
+        android:indeterminateTint="@android:color/transparent"
+        android:max="1000"
+        android:progress="0"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@android:color/transparent"
+        android:secondaryProgressTint="@android:color/transparent"
+        android:thumbTint="@color/colorTextLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hueText"
+        app:tickMarkTint="@android:color/transparent" />
+
+    <SeekBar
+        android:id="@+id/saturationSlider"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foregroundTint="@android:color/transparent"
+        android:indeterminateTint="@android:color/transparent"
+        android:max="1000"
+        android:progress="1000"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@android:color/transparent"
+        android:secondaryProgressTint="@android:color/transparent"
+        android:thumbTint="@color/colorTextLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturationText"
+        app:tickMarkTint="@android:color/transparent" />
+
+    <SeekBar
+        android:id="@+id/valueSlider"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:foregroundTint="@android:color/transparent"
+        android:indeterminateTint="@android:color/transparent"
+        android:max="1000"
+        android:progress="1000"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@android:color/transparent"
+        android:secondaryProgressTint="@android:color/transparent"
+        android:thumbTint="@color/colorTextLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueText"
+        app:tickMarkTint="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_default"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text="@string/close"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextLight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectedColor"
+        app:layout_constraintTop_toTopOf="@+id/selectedColorText" />
+
+    <TextView
+        android:id="@+id/selectedColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/selected_color"
+        android:textColor="@color/colorTextLight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/selectedColor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/selectedColor"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FF0000"
+        android:contentDescription="@android:string/untitled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/selectedColorText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

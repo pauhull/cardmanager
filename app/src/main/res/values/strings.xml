@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Kundenkarten</string>
+    <string name="scan_card">Karte einscannen</string>
+    <string name="card_manager">Kundenkarten</string>
+    <string name="qr_help">Scannen Sie den Strich- oder QR-Code auf Ihrer Kundenkarte ein.</string>
+    <string name="add_card">Karte hinzufügen</string>
+    <string name="select_color">Farbe auswählen</string>
+    <string name="card_name">Kartenname</string>
+    <string name="customer_name">Kundenname</string>
+    <string name="scanned_code">Gescannter Code</string>
+    <string name="hue">Farbton</string>
+    <string name="saturation">Sättigung</string>
+    <string name="value">Helligkeit</string>
+    <string name="close">Schließen</string>
+    <string name="selected_color">Ausgewählte Farbe:</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="save">Speichern</string>
+    <string name="enter_card_name">Bitte benennen Sie diese Karte.</string>
+    <string name="enter_customer_name">Bitte geben Sie Ihren Namen ein.</string>
+    <string name="no_card_found">Sie haben keine Kundenkarten.</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="delete">Löschen</string>
+    <string name="card_hint_vertical">Drehen Sie ihr Gerät für eine größere Darstellung.</string>
+</resources>

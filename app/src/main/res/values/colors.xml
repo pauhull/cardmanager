@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_app_icon_background">#000000</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorTextLight">#FFFFFF</color>
+    <color name="colorTextDark">#000000</color>
+    <color name="colorRipple">#59FFFFFF</color>
+    <color name="colorButtonBackground">#2E2E2E</color>
+    <color name="colorTextViewBackground">#232323</color>
+    <color name="colorQrBackground">#1B1B1B</color>
+    <color name="colorDialogBackground">#121212</color>
+    <color name="colorDelete">#932121</color>
+</resources>
